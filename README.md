@@ -1,4 +1,4 @@
-# CSC-entrance tests solutions
+# Coputer Science Center entrance tests solutions
 This repository contains several folders filled with CSC entrance tests programming problems solutions. 
 
 Original problems you can find [here](https://contest.yandex.ru/contest/16975/enter/).
