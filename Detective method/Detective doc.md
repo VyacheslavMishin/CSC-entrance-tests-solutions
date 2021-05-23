@@ -18,7 +18,7 @@ Algorithm which rules **all_different_variants**:
 
 1. Take next level of the given table (recursive call of **all_different_variants**);
 2. Loop through places of the level;
-3. Go back to 1st step of the algorithm, if current place can be taken (matrix[len(used_place)][place] != 1) and it is free (place not in used_place);
+3. Go back to 1st step of the algorithm, if current place can be taken (matrix[len(used_place)][place] != 1) and it is free (place not in used_place). Before taking the next level mark current place busied (used_place.add(place));
 4. If the table last level was reached (len(used_place) == len(matrix) - 1) and the last character turned to be placeble, add **1** to the *answer* list (answer.append(1)) then go back to the previous level (return);
 5. If a character can't be placed on some level, go back (return) to the previous one to choose the next place for previous character. One has to vanish previous character place from *used_place*, because this place is freed.
 
